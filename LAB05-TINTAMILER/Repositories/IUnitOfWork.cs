@@ -1,5 +1,3 @@
-using LAB05_TINTAMILER.Repositories;
-
 namespace LAB05_TINTAMILER.Repositories;
 
 public interface IUnitOfWork : IDisposable
