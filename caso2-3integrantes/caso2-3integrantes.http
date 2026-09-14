@@ -1,0 +1,6 @@
+@caso2_3integrantes_HostAddress = http://localhost:5046
+
+GET {{caso2_3integrantes_HostAddress}}/swagger/v1/swagger.json
+Accept: application/json
+
+###
