@@ -6,6 +6,7 @@ using LAB05_TINTAMILER.Services.Implementations;
 using LAB05_TINTAMILER.Services;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,12 +42,23 @@ builder.Services.AddControllers()
 
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "LAB05 TINTAMILER API",
+        Version = "v1",
+        Description = "API para la gestion de proyectos de una empresa de consultoria."
+    });
+});
 
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "LAB05 TINTAMILER API v1");
+});
 
 app.UseExceptionHandler(exceptionHandlerApp =>
 {
