@@ -1,5 +1,5 @@
 using LAB05_TINTAMILER.Models;
-using LAB05_TINTAMILER.Repositories.Interfaces;
+using LAB05_TINTAMILER.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace LAB05_TINTAMILER.Repositories.Implementations;

@@ -1,7 +1,6 @@
 using System.Collections;
 using LAB05_TINTAMILER.Repositories;
-using LAB05_TINTAMILER.Repositories.Interfaces;
-using LAB05_TINTAMILER.Services.Interfaces;
+using LAB05_TINTAMILER.Services;
 
 namespace LAB05_TINTAMILER.Services.Implementations;
 

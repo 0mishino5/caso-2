@@ -2,9 +2,8 @@ using System.Text.Json.Serialization;
 using LAB05_TINTAMILER.Models;
 using LAB05_TINTAMILER.Repositories;
 using LAB05_TINTAMILER.Repositories.Implementations;
-using LAB05_TINTAMILER.Repositories.Interfaces;
 using LAB05_TINTAMILER.Services.Implementations;
-using LAB05_TINTAMILER.Services.Interfaces;
+using LAB05_TINTAMILER.Services;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 

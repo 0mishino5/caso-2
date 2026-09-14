@@ -1,4 +1,4 @@
-namespace LAB05_TINTAMILER.Repositories.Interfaces;
+namespace LAB05_TINTAMILER.Repositories;
 
 public interface IRepository<T> where T : class
 {

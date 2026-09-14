@@ -1,4 +1,4 @@
-namespace LAB05_TINTAMILER.Services.Interfaces;
+namespace LAB05_TINTAMILER.Services;
 
 public interface ICrudService<T> where T : class
 {

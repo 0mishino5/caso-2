@@ -1,4 +1,4 @@
-using LAB05_TINTAMILER.Services.Interfaces;
+using LAB05_TINTAMILER.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LAB05_TINTAMILER.Controllers;
