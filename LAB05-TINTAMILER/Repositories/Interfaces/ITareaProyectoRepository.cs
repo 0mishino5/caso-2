@@ -2,6 +2,6 @@ using LAB05_TINTAMILER.Models;
 
 namespace LAB05_TINTAMILER.Repositories.Interfaces;
 
-public interface ITareaProyectoRepository : IRepository<TareaProyecto>
+public interface ITareaProyectoRepository : IRepository<Tareasproyecto>
 {
 }

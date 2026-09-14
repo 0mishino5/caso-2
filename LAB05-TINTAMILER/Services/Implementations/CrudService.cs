@@ -55,11 +55,12 @@ public class CrudService<T> : ICrudService<T> where T : class
 
     private static void CopyEditableValues(T source, T target)
     {
-        var keyName = $"{typeof(T).Name}Id";
+        var keyProperty = typeof(T).GetProperties()
+            .FirstOrDefault(property => property.Name.EndsWith("id", StringComparison.OrdinalIgnoreCase));
 
         foreach (var property in typeof(T).GetProperties())
         {
-            if (!property.CanRead || !property.CanWrite || property.Name == keyName)
+            if (!property.CanRead || !property.CanWrite || property.Name == keyProperty?.Name)
             {
                 continue;
             }

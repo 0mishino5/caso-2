@@ -3,7 +3,7 @@ using LAB05_TINTAMILER.Repositories.Interfaces;
 
 namespace LAB05_TINTAMILER.Repositories.Implementations;
 
-public class ComunicacionClienteRepository : Repository<ComunicacionCliente>, IComunicacionClienteRepository
+public class ComunicacionClienteRepository : Repository<Comunicacionescliente>, IComunicacionClienteRepository
 {
     public ComunicacionClienteRepository(ConsultoriaDbContext context) : base(context)
     {

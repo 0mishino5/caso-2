@@ -4,7 +4,7 @@ using LAB05_TINTAMILER.Services.Interfaces;
 
 namespace LAB05_TINTAMILER.Services.Implementations;
 
-public class ComunicacionClienteService : CrudService<ComunicacionCliente>, IComunicacionClienteService
+public class ComunicacionClienteService : CrudService<Comunicacionescliente>, IComunicacionClienteService
 {
     public ComunicacionClienteService(IUnitOfWork unitOfWork)
         : base(unitOfWork.ComunicacionesCliente, unitOfWork, "La comunicacion")

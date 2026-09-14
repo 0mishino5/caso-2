@@ -2,6 +2,6 @@ using LAB05_TINTAMILER.Models;
 
 namespace LAB05_TINTAMILER.Services.Interfaces;
 
-public interface IInformeProgresoService : ICrudService<InformeProgreso>
+public interface IInformeProgresoService : ICrudService<Informesprogreso>
 {
 }

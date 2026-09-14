@@ -4,7 +4,7 @@ using LAB05_TINTAMILER.Services.Interfaces;
 
 namespace LAB05_TINTAMILER.Services.Implementations;
 
-public class HitoProyectoService : CrudService<HitoProyecto>, IHitoProyectoService
+public class HitoProyectoService : CrudService<Hitosproyecto>, IHitoProyectoService
 {
     public HitoProyectoService(IUnitOfWork unitOfWork)
         : base(unitOfWork.HitosProyecto, unitOfWork, "El hito")

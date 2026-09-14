@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LAB05_TINTAMILER.Controllers;
 
 [Route("api/[controller]")]
-public class PresupuestosProyectoController : CrudController<PresupuestoProyecto>
+public class PresupuestosProyectoController : CrudController<Presupuestosproyecto>
 {
     public PresupuestosProyectoController(IPresupuestoProyectoService presupuestoProyectoService) : base(presupuestoProyectoService)
     {

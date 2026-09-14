@@ -3,7 +3,7 @@ using LAB05_TINTAMILER.Repositories.Interfaces;
 
 namespace LAB05_TINTAMILER.Repositories.Implementations;
 
-public class HitoProyectoRepository : Repository<HitoProyecto>, IHitoProyectoRepository
+public class HitoProyectoRepository : Repository<Hitosproyecto>, IHitoProyectoRepository
 {
     public HitoProyectoRepository(ConsultoriaDbContext context) : base(context)
     {

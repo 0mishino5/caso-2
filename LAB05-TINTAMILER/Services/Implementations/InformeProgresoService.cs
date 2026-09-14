@@ -4,7 +4,7 @@ using LAB05_TINTAMILER.Services.Interfaces;
 
 namespace LAB05_TINTAMILER.Services.Implementations;
 
-public class InformeProgresoService : CrudService<InformeProgreso>, IInformeProgresoService
+public class InformeProgresoService : CrudService<Informesprogreso>, IInformeProgresoService
 {
     public InformeProgresoService(IUnitOfWork unitOfWork)
         : base(unitOfWork.InformesProgreso, unitOfWork, "El informe")

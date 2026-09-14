@@ -3,7 +3,7 @@ using LAB05_TINTAMILER.Repositories.Interfaces;
 
 namespace LAB05_TINTAMILER.Repositories.Implementations;
 
-public class InformeProgresoRepository : Repository<InformeProgreso>, IInformeProgresoRepository
+public class InformeProgresoRepository : Repository<Informesprogreso>, IInformeProgresoRepository
 {
     public InformeProgresoRepository(ConsultoriaDbContext context) : base(context)
     {

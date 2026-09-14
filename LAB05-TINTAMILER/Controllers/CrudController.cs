@@ -50,7 +50,9 @@ public abstract class CrudController<T> : ControllerBase where T : class
 
     private static object? GetPrimaryKeyValue(T item)
     {
-        var keyName = $"{typeof(T).Name}Id";
-        return typeof(T).GetProperty(keyName)?.GetValue(item);
+        var keyProperty = typeof(T).GetProperties()
+            .FirstOrDefault(property => property.Name.EndsWith("id", StringComparison.OrdinalIgnoreCase));
+
+        return keyProperty?.GetValue(item);
     }
 }
