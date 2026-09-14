@@ -8,7 +8,6 @@ API ASP.NET Core para el Caso 2: Empresa de Servicios de Consultoria - Gestion d
 - `Repositories`: acceso a datos mediante repositorios e `IUnitOfWork`.
 - `Services`: reglas y operaciones CRUD separadas del controlador.
 - `Controllers`: endpoints REST para probar desde Swagger.
-- `Migrations`: migracion inicial para crear la base de datos PostgreSQL.
 
 ## Entidades principales
 
@@ -25,7 +24,6 @@ API ASP.NET Core para el Caso 2: Empresa de Servicios de Consultoria - Gestion d
 
 ```bash
 dotnet build
-dotnet ef database update
 dotnet run
 ```
 
