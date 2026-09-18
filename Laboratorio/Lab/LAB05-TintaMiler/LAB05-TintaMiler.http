@@ -1,0 +1,6 @@
+@LAB05_TintaMiler_HostAddress = http://localhost:5032
+
+GET {{LAB05_TintaMiler_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
